@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="526.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <AnchorPane prefHeight="68.0" prefWidth="713.0" style="-fx-background-color: #155583;">
+         <children>
+            <Label layoutX="288.0" layoutY="15.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#155583" height="92.0" layoutX="541.0" layoutY="81.0" stroke="#155583" strokeType="INSIDE" width="163.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#155583" height="92.0" layoutX="14.0" layoutY="81.0" stroke="#155583" strokeType="INSIDE" width="163.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#155583" height="92.0" layoutX="188.0" layoutY="81.0" stroke="#155583" strokeType="INSIDE" width="163.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#155583" height="92.0" layoutX="364.0" layoutY="81.0" stroke="#155583" strokeType="INSIDE" width="163.0" />
+      <Label layoutX="61.0" layoutY="147.0" text="Total Income" textFill="WHITE" />
+      <Label layoutX="403.0" layoutY="147.0" text="Total Customers" textFill="WHITE" />
+      <Label layoutX="229.0" layoutY="147.0" text="Available Stock" textFill="WHITE" />
+      <Label layoutX="597.0" layoutY="147.0" text="Employee" textFill="WHITE" />
+      <BarChart layoutX="20.0" layoutY="212.0" prefHeight="287.0" prefWidth="353.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <LineChart layoutX="382.0" layoutY="202.0" prefHeight="296.0" prefWidth="319.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="204.0" layoutY="482.0" text="Bar Chart">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="527.0" layoutY="482.0" text="Line Chart">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

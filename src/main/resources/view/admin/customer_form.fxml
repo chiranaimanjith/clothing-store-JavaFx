@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="526.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.CustomerFormController">
+   <children>
+      <AnchorPane prefHeight="68.0" prefWidth="713.0" style="-fx-background-color: #155583;">
+         <children>
+            <Label layoutX="289.0" layoutY="15.0" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblCustomers" layoutX="14.0" layoutY="84.0" prefHeight="433.0" prefWidth="453.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="47.0" text="ID" />
+            <TableColumn fx:id="colTitle" prefWidth="64.0" text="Title" />
+            <TableColumn fx:id="colName" prefWidth="101.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="88.0" text="Address" />
+            <TableColumn fx:id="colPhone" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="433.0" layoutX="477.0" layoutY="85.0" stroke="#e8ebee" strokeType="INSIDE" style="-fx-cursor: 90;" width="230.0" />
+      <Label layoutX="483.0" layoutY="93.0" prefHeight="19.0" prefWidth="149.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="178.0" prefHeight="27.0" prefWidth="24.0" text="ID ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="624.0" layoutY="125.0" prefHeight="26.0" prefWidth="75.0" text="2024-10-16">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerID" layoutX="551.0" layoutY="178.0" prefHeight="27.0" prefWidth="38.0" text="C001 ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="487.0" layoutY="226.0" prefHeight="27.0" prefWidth="31.0" text="Title">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="485.0" layoutY="302.0" prefHeight="27.0" prefWidth="59.0" text="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="264.0" prefHeight="27.0" prefWidth="45.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="345.0" prefHeight="27.0" prefWidth="45.0" text="Phone">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="488.0" layoutY="380.0" prefHeight="27.0" prefWidth="38.0" text="Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTitle" layoutX="550.0" layoutY="214.0" prefHeight="25.0" prefWidth="149.0" promptText="MR/MISS" />
+      <JFXTextField fx:id="txtName" layoutX="550.0" layoutY="252.0" prefHeight="25.0" prefWidth="149.0" promptText="Saman Kumara" />
+      <JFXTextField fx:id="txtAddress" layoutX="550.0" layoutY="290.0" prefHeight="25.0" prefWidth="149.0" promptText="Panadura" />
+      <JFXTextField fx:id="txtNumber" layoutX="550.0" layoutY="333.0" prefHeight="25.0" prefWidth="149.0" promptText="0716560630" />
+      <JFXTextField fx:id="txtEmail" layoutX="550.0" layoutY="380.0" prefHeight="25.0" prefWidth="149.0" promptText="sample@gmail.com" />
+      <Button layoutX="508.0" layoutY="434.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #155583;" text="Add" textFill="WHITE" />
+      <Button layoutX="507.0" layoutY="471.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #8B8484;" text="Update" textFill="WHITE" />
+      <Button layoutX="603.0" layoutY="471.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #9B1010;" text="Delete" textFill="WHITE" />
+      <Label fx:id="lblTime" layoutX="502.0" layoutY="125.0" prefHeight="26.0" prefWidth="68.0" text="11:34 PM">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
