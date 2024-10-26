@@ -1,5 +1,6 @@
 package controller.customer;
-public class CustomerController {
+
+public class CustomerController{
     private static CustomerController instance;
 
     private CustomerController() {
@@ -9,5 +10,5 @@ public class CustomerController {
         return instance == null ? instance = new CustomerController() : instance;
     }
 
-
 }
+

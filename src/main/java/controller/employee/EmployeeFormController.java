@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -21,6 +22,13 @@ public class EmployeeFormController implements Initializable {
 
     @FXML
     private BorderPane mainBorderPane;
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        loard();
+        btnLogOut();
+    }
 
     @FXML
     void btnDashboardOnAction(ActionEvent event) {
@@ -95,8 +103,15 @@ public class EmployeeFormController implements Initializable {
         }
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        loard();
+    private void btnLogOut() {
+        btnLogout.sceneProperty().addListener((observable, oldScene, newScene) -> {
+            if (newScene != null) {
+                newScene.setOnKeyPressed(event -> {
+                    if (event.isControlDown() && event.getCode() == KeyCode.F4) {
+                        btnLogout.fire();
+                    }
+                });
+            }
+        });
     }
 }

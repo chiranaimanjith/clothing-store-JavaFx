@@ -1,18 +1,16 @@
-package dto;
+package entity;
 
-import entity.CustomerEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.time.LocalDateTime;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Customer{
+public class CustomerEntity {
     private String custId;
     private String custTitle;
     private String custname;

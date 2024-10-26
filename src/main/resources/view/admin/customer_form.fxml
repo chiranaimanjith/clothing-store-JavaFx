@@ -23,11 +23,12 @@
       <TableView fx:id="tblCustomers" layoutX="14.0" layoutY="84.0" prefHeight="433.0" prefWidth="453.0">
          <columns>
             <TableColumn fx:id="colID" prefWidth="47.0" text="ID" />
-            <TableColumn fx:id="colTitle" prefWidth="64.0" text="Title" />
-            <TableColumn fx:id="colName" prefWidth="101.0" text="Name" />
-            <TableColumn fx:id="colAddress" prefWidth="88.0" text="Address" />
-            <TableColumn fx:id="colPhone" prefWidth="75.0" text="Phone" />
-            <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="colTitle" prefWidth="47.0" text="Title" />
+            <TableColumn fx:id="colName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="81.0" text="Address" />
+            <TableColumn fx:id="colPhone" prefWidth="82.0" text="Phone" />
+            <TableColumn fx:id="colEmail" prefWidth="62.0" text="Email" />
+            <TableColumn fx:id="colDateAndTime" prefWidth="62.0" text="Created Date" />
          </columns>
       </TableView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="433.0" layoutX="477.0" layoutY="85.0" stroke="#e8ebee" strokeType="INSIDE" style="-fx-cursor: 90;" width="230.0" />

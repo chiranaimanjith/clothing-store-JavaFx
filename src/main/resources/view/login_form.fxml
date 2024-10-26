@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <JFXButton layoutX="378.0" layoutY="245.0" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #155583;" text="Login" textFill="WHITE" />
+      <JFXButton fx:id="btnLogin" layoutX="378.0" layoutY="245.0" onAction="#btnLoginOnAction" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #155583;" text="Login" textFill="WHITE" />
       <JFXPasswordField fx:id="userPassword" layoutX="364.0" layoutY="188.0" prefHeight="25.0" prefWidth="164.0" promptText="Password" style="-fx-background-color: 3177AA;" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#155583" height="401.0" layoutX="-7.0" stroke="#155583" strokeType="INSIDE" width="290.0" />
       <Text fill="#155583" layoutX="373.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot Your Password ?" />

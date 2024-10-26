@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -21,11 +22,24 @@ public class AdminFormController implements Initializable {
 
 
     @FXML
-    private Button btnLogout;
+    private static Button btnLogout;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         loard();
+        //btnLogOut();
+    }
+
+    private void btnLogOut(){
+        btnLogout.sceneProperty().addListener((observable, oldScene, newScene) -> {
+            if (newScene != null) {
+                newScene.setOnKeyPressed(event -> {
+                    if (event.isControlDown() && event.getCode() == KeyCode.F4) {
+                        btnLogout.fire();
+                    }
+                });
+            }
+        });
     }
 
     private void loard(){

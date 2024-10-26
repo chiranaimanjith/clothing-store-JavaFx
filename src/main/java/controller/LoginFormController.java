@@ -1,5 +1,6 @@
 package controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import db.DBConnection;
@@ -8,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -23,6 +25,17 @@ public class LoginFormController {
 
     @FXML
     private JFXPasswordField userPassword;
+
+    @FXML
+    private JFXButton btnLogin;
+
+    public void initialize() {
+        userPassword.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                btnLogin.fire();
+            }
+        });
+    }
 
     @FXML
     void btnLoginOnAction(ActionEvent event) {
