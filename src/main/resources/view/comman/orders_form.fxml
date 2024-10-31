@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="526.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.order.OrdersFormContorller">
    <children>
@@ -16,5 +17,12 @@
             </Label>
          </children>
       </AnchorPane>
+      <TableView fx:id="tblCustomers" layoutX="41.0" layoutY="80.0" prefHeight="386.0" prefWidth="496.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="66.0" text="OrderID" />
+            <TableColumn fx:id="colAddress" prefWidth="81.0" text="ProductID" />
+            <TableColumn fx:id="colDateAndTime" prefWidth="101.0" text="Created Date" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>
