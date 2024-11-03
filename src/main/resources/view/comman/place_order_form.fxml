@@ -26,7 +26,8 @@
       <TableView layoutX="25.0" layoutY="96.0" prefHeight="390.0" prefWidth="432.0">
         <columns>
           <TableColumn prefWidth="75.0" text="ID" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn prefWidth="75.0" text="Order Date" />
+            <TableColumn prefWidth="75.0" text="CustomerID" />
         </columns>
       </TableView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8ebee" height="433.0" layoutX="467.0" layoutY="75.0" stroke="#e8ebee" strokeType="INSIDE" style="-fx-cursor: 90;" width="230.0" />
