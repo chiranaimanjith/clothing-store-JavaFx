@@ -164,7 +164,6 @@ public class CustomerFormController implements Initializable {
             }
             clearFields();
         } else {
-            //if invalid data
             showAlert("Validation Error", "Please check the entered data. Ensure all fields are filled correctly:\n" +
                     "- Cust ID cannot be empty.\n" +
                     "- Title must be either 'Mr', 'Ms', or 'Miss'.\n" +
