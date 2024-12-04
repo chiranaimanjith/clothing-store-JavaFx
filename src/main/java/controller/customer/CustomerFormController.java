@@ -230,7 +230,6 @@ public class CustomerFormController implements Initializable {
         alert.setContentText(message);
         alert.showAndWait();
     }
-
 }
 
 

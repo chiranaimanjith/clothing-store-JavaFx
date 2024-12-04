@@ -9,6 +9,5 @@ public class CustomerController{
     public static CustomerController getInstance() {
         return instance == null ? instance = new CustomerController() : instance;
     }
-
 }
 
